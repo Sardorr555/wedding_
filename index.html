@@ -21,9 +21,6 @@
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
     <!-- Website to visit when clicked in fb or WhatsApp-->
-    <meta property="og:url" content="https://we.shyamjos.com">
-	<meta property="og:type" content="website"/>
-    <meta property="og:image:type" content="image/jpeg">
 
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
@@ -39,7 +36,7 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	
+
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
 	
 	<!-- Magnific Popup -->
@@ -58,23 +55,44 @@
 	</head>
 
 	<style>
-		/* Контейнер для карты */
-.map-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 56.25%; /* Соотношение сторон 16:9 */
+
+.container-media {
+    width: 100%; /* Устанавливаем ширину на 100% */
+    padding: 10px; /* Добавляем отступы */
+    box-sizing: border-box; /* Включаем отступы и границы в ширину и высоту элемента */
 }
 
-/* Сам iframe */
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+/* Медиа-запросы для устройств с шириной экрана до 768px (обычно планшеты и мобильные телефоны) */
+@media (max-width: 768px) {
+    .container-media .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-media .col-md-6 {
+        width: 100%; /* Устанавливаем ширину на 100% */
+        margin-bottom: 20px; /* Добавляем отступы снизу */
+    }
+
+    .container-media iframe {
+        width: 100%;
+        height: auto; /* Высота адаптируется автоматически */
+    }
+
+    .container-media .event-wrap {
+        padding: 15px; /* Увеличиваем отступы */
+    }
+
+    .container-media h3 {
+        font-size: 1.5em; /* Увеличиваем размер заголовка */
+    }
+
+    .container-media p {
+        font-size: 1.1em; /* Увеличиваем размер шрифта для текста */
+    }
 }
+
 
 	</style>
 	<body>
@@ -119,14 +137,10 @@
 								Начало торжества в 18:00.
 								
 								Ждем вас, чтобы вместе отпраздновать этот незабываемый день!<br>Sardor and Sanobar</h2>
-							<div class="flipTimebox" style=" display: flex;
-							justify-content: center;
-							margin: 0 auto; /* Центрирование по горизонтали */
-							max-width: 100%; /* Ограничение по ширине */
-							overflow: hidden; /* Предотвращение выхода за границы контейнера */">
+							<div class="flipTimebox" style="margin-left: auto;">
 								<div class="clock clock-fix"></div>
 							  </div>
-							<p><a href="#fh5co-event" class="btn btn-default btn-sm">Место праздника</a></p>
+							<p ><a href="#fh5co-event" class="btn btn-default btn-sm" >Место праздника</a></p>
 						</div>
 					</div>
 				</div>
@@ -137,7 +151,7 @@
 
 
 	<div id="fh5co-event" class="fh5co-bg">
-		<div class="overlay"></div>
+		<div class="overlay" ></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -145,12 +159,13 @@
 				</div>
 			</div>
 
+			<div class="container-media">
 			<div class="row">
 				<div class="display-t">
 					<div class="display-tc">
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
+								<div class="event-wrap animate-box" style="padding: 10px;">
 									<h3>Мазареди</h3>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
@@ -161,7 +176,7 @@
 										<i class="icon-clock"></i>
 										<span>17:30</span>
 									</div>
-									<p>At <b>Andijon,  "Navro'z" choyxonasi.</b></p>
+									<p> <b>Andijon,  "Navro'z" choyxonasi.</b></p>
 									<iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Andijon,%20%20%22Navro'z%22%20choyxonasi+(%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0%20)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 							</div>
@@ -177,8 +192,9 @@
 										<i class="icon-clock"></i>
 										<span>12:00 PM</span>
 									</div>
-									<p> <b>Andijon, Oq laylak to'yxonasi </b> </p>
-						<iframe  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Andijon,%20%20Oq%20laylak%20to'yxonasi+(%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0%20)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+									<p><b>Andijon, Oq laylak to'yxonasi </b> </p>
+						       <iframe  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Andijon,%20%20Oq%20laylak%20to'yxonasi+(%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0%20)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 							</div>
 						</div>
@@ -187,7 +203,7 @@
 			</div>
 		</div>
 	</div>
-	j
+</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>

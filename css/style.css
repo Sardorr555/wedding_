@@ -1404,6 +1404,7 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .offcanvas #fh5co-offcanvas {
   -moz-transform: translateX(0px);
   -webkit-transform: translateX(0px);
